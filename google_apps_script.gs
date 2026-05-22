@@ -1,5 +1,5 @@
-const SHEET_ID = '1Wp6N8B39yBAxtPscwNSbnqr_Q9dm2yKJluErRzFEyiA';
-const SHEET_NAME = 'Sheet1';
+const SHEET_ID = '1pux0EkoQUVN6jYKygQBMccvRFgNEwv8TL26FAt2GoWI';
+const SHEET_NAME = 'ชีต1';
 
 function setupHeader() {
   const sheet = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
