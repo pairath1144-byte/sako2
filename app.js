@@ -77,7 +77,6 @@ async function submitForm(){
     suggestion:document.getElementById('suggestion').value.trim()
   };
   if(!data.supervisor || !data.teacher || !data.subject || !data.score){ alert('กรุณากรอก ชื่อผู้นิเทศ / ครู / วิชา / คะแนน ให้ครบ'); return; }
-  if(APPS_SCRIPT_URL.includes('YOUR_')){ alert('ยังไม่ได้ใส่ Google Apps Script URL ในไฟล์ app.js'); return; }
   try{
     await fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)});
     alert('บันทึกข้อมูลสำเร็จ');
